@@ -63,15 +63,15 @@ class GUI {
             let [dv1, dv2] = f(numero.substring(0, tamanho - 2));
             if (dv1 !== parseInt(numero[tamanho - 2]) || dv2 !== parseInt(numero[tamanho - 1])) {
                 resposta.textContent = "Documento inválido!";
-                resposta.style.color = "red";
+                resposta.className = "text-danger";
             } else {
                 resposta.textContent = "Documento válido!";
-                resposta.style.color = "blue";
+                resposta.className = "text-primary";
             }
         } else if (numero.length === tamanho - 2) {
             let [dv1, dv2] = f(numero);
             resposta.textContent = `Os dígitos verificadores são ${dv1}${dv2}`;
-            resposta.style.color = "green";
+            resposta.className = "text-success";
         }
     }
     validar(ev) {
