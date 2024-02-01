@@ -12,28 +12,26 @@
 </head>
 
 <body>
-    <form id="form" action="#" class="container-sm">
-        <fieldset>
-            <legend>Validação:</legend>
-            <div class="row mb-3">
-                <div class="col"><label for="cpf" class="col-form-label">Digite o seu CPF:</label></div>
-                <div class="col"><input type="number" id="cpf" min="0" max="99999999999" class="form-control"></div>
-                <div class="col"><span id="cpfMessage"></span></div>
-            </div>
-            <div class="row mb-3">
-                <div class="col"><label for="cnpj" class="col-form-label">Digite o seu CNPJ:</label></div>
-                <div class="col"><input type="number" id="cnpj" min="0" max="99999999999999" class="form-control"></div>
-                <div class="col"><span id="cnpjMessage"></span></div>
-            </div>
-            <div class="row mb-3">
-                <div class="col"><label for="cnpj" class="col-form-label">Digite o seu Título de Eleitor:</label></div>
-                <div class="col"><input type="number" id="eleitor" max="999999999999" class="form-control"></div>
-                <div class="col"><span id="eleitorMessage"></span></div>
-            </div>
-            <div class="row">
-                <div class="col"><input type="submit" value="Validar!" class="btn btn-primary"></div>
-            </div>
-        </fieldset>
+    <h1 class="text-center">Validação</h1>
+    <form id="form" action="#" class="container-sm mw-25">
+        <div class="row mb-3">
+            <div class="col"><label for="cpf" class="col-form-label">Digite o seu CPF:</label></div>
+            <div class="col"><input type="number" id="cpf" min="0" max="99999999999" class="form-control"></div>
+            <div class="col"><span id="cpfMessage"></span></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col"><label for="cnpj" class="col-form-label">Digite o seu CNPJ:</label></div>
+            <div class="col"><input type="number" id="cnpj" min="0" max="99999999999999" class="form-control"></div>
+            <div class="col"><span id="cnpjMessage"></span></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col"><label for="cnpj" class="col-form-label">Digite o seu Título de Eleitor:</label></div>
+            <div class="col"><input type="number" id="eleitor" max="999999999999" class="form-control"></div>
+            <div class="col"><span id="eleitorMessage"></span></div>
+        </div>
+        <div class="row">
+            <div class="col"><input type="submit" value="Validar!" class="btn btn-primary"></div>
+        </div>
     </form>
 </body>
 
